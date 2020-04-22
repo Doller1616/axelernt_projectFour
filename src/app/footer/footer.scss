@@ -1,54 +1,63 @@
 .foot-container {
-   display:flex;
+  display:flex;
   flex-direction: column;
+  position: relative;
+  background-color: black;
+  min-height: 600px;
+  img{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    opacity:.1;
+  }
 }
 
 .foot-center {
   width: 60%;
-  background-color: yellow;
   margin:auto;
-  text-align: center;
   p,h4{
     margin:0
   }
 }
 
+.foot-header{
+  color:#fff;
+  text-align: center;
+}
+
 .foot-fields {
   display:flex;
-  text-align: left;
+  // text-align: center;
   padding: 10px 0px;
   justify-content: space-between;
   .input-div{
-    input{all:unset;}
+    input{all:unset;width: 100%;height:100%;}
     border:1px solid #000;
     border-radius: 3px;
     padding:5px;
     width:30%;
+    background-color: #fff;
   }
 }
 
-.foot-MsgArea{
-    // text-align: center;
-  // margin: 0 0 0 10px;
-  background-color: lightgreen; 
+.foot-MsgArea{ 
   .msg-div{
     textarea{all:unset; width: 100%;height:100%;}
     border:1px solid #000;
     border-radius: 3px;
     height:100px;
-    // width:100%;
+    background-color: #fff;
     padding:5px;
-    // flex-basis:100%;
     text-align: left;
   }
   .btn-div{
-    button{all:unset;width: 100%;height:100%;}
+    button{all:unset;width: 100%;height:100%;text-align: center}
     border:1px solid #000;
-    border-radius: 15px;
-    padding:5px;
+    border-radius: 18px;
+    padding:8px;
     width:100px;
     margin:0 auto;
-    background-color: orange;
+    background-color: #ff531a;
     color:#fff;
   }
 }
@@ -56,13 +65,24 @@
 .footer-end {
   display:flex;
   justify-content: space-between;
+  color:#fff;
+  background-color: #000;
+  z-index:1;
+  padding: 20px 10px;
   .text-left{
    flex-basis:30px;
   }
   .text-right {
     flex-basis:30px;
   }
-
+  .social-media{
+    display:inline-block;
+    i{margin-left: 5px; font-size:20px;}
+    &:before {
+      content :'Follow us on :'
+      }
+  }
+  
 }
 
 @media (max-width:800px){
@@ -71,12 +91,18 @@
     text-align: left;
     .input-div{
       margin-bottom: 5px;
-      width:97%;
+      width:96%;
     }
   }
-.foot-MsgArea{
-  .msg-div{
-
+  .footer-end{
+    font-size: 13px;
+    text-align: center;
+   flex-direction:column;
+   .left-text{
+    padding-top:10px;
+   }
+   .right-text{
+    padding-bottom:10px;
+   }
   }
-}
 }
