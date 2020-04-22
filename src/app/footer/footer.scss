@@ -27,8 +27,9 @@
 }
 
 .foot-MsgArea{
+  margin: 0 auto;
   //  text-align: center;
-  
+  background-color: lightgreen; 
   .msg-div{
     textarea{all:unset; width: 100%;height:100%;}
     border:1px solid #000;
@@ -71,4 +72,11 @@
       margin-bottom: 5px;
     }
   }
+.foot-MsgArea{
+  padding:0 0 0 10px;
+  
+  .msg-div{
+
+  }
+}
 }
