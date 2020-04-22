@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
 
   showMenu(one) {
     // console.log(one.classList.contain("anima-class"));
-    one.classList.toggle("anima-class");
+    one.classList.toggle("anima-class2");
+    // one.style.display='block';
   }
 }

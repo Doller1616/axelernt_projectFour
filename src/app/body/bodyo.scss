@@ -24,7 +24,6 @@ background-color: #fff;
 }
 
 .bottom-container {
-  // text-alignpx;
   background-color: #e0e0eb;
  .testim-container {
   display:flex;
@@ -68,7 +67,7 @@ background-color: #fff;
  margin-bottom:18px;
 .arrow {
 position: absolute;
-bottom:-3%;
+bottom:-4%;
 background-color:#ffffff;
 height:25px;
 width: 35px;
@@ -87,12 +86,16 @@ i{color:#ff531a}
 
 
 .testim-container{
-  overflow: scroll;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 1px;
+  }
   .msg-bubble{
    width: 400px;
    padding: 30px;
    margin-left:10px;
    text-align:justify;
   }
+  
 }
 }

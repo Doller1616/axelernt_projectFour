@@ -103,7 +103,6 @@ justify-content:center;
     li{
       display: block;
     }
- 
   }
   .header-links, .header-logo {
     display:none;
@@ -123,5 +122,13 @@ justify-content:center;
 }
 
 .anima-class {
-  display:none;
+  opacity:0;
+  height:0;
+  transition-property: height,opacity;
+  transition-duration: 1s,1s;
+}
+
+.anima-class2 {
+  height:135px;
+  opacity:1;
 }
